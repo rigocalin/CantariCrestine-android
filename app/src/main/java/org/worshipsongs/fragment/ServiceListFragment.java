@@ -70,6 +70,7 @@ public class ServiceListFragment extends Fragment
         serviceListView = (ListView) linearLayout.findViewById(R.id.list_view);
         serviceMsg = (TextView) linearLayout.findViewById(R.id.serviceMsg);
         serviceNames.clear();
+        setHasOptionsMenu(true);
         loadService();
         final Vibrator vibrator = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
         serviceListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
@@ -176,9 +177,10 @@ public class ServiceListFragment extends Fragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
     {
-        inflater.inflate(R.menu.action_bar_menu, menu);
+        //inflater.inflate(R.menu.action_bar_menu, menu);
+        inflater.inflate(R.menu.import_service_bar_menu, menu);
         // Associate searchable configuration with the SearchView
-        SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
+        /*SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
         android.support.v7.widget.SearchView searchView = (android.support.v7.widget.SearchView) menu.findItem(R.id.menu_search).getActionView();
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
         ImageView image = (ImageView) searchView.findViewById(R.id.search_close_btn);
@@ -200,7 +202,7 @@ public class ServiceListFragment extends Fragment
                 return true;
 
             }
-        });
+        });*/
         super.onCreateOptionsMenu(menu, inflater);
     }
 
