@@ -32,6 +32,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.worshipsongs.CommonConstants;
+import org.worshipsongs.activity.DatabaseSettingActivity;
 import org.worshipsongs.activity.ServiceSongListActivity;
 import org.worshipsongs.utils.CommonUtils;
 import org.worshipsongs.utils.PropertyUtils;
@@ -215,7 +216,28 @@ public class ServiceListFragment extends Fragment
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
-        return super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case R.id.importservice:
+                importServiceFile();
+                break;
+        }
+        return true;
+    }
+
+    private void importServiceFile() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), R.style.MyDialogTheme));
+        builder.setTitle(getString(R.string.type_service));
+        builder.setItems(R.array.dataBaseTypes, new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                dialog.cancel();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.getListView().setSelector(android.R.color.darker_gray);
+        dialog.show();
     }
 
     @Override
