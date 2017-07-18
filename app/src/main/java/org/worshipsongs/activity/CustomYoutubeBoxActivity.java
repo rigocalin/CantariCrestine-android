@@ -8,12 +8,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -21,7 +19,6 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
 
-import org.worshipsongs.WorshipSongApplication;
 import org.worshipsongs.adapter.SongCardViewAdapter;
 import org.worshipsongs.adapter.SongContentLandScapeViewerPageAdapter;
 import org.worshipsongs.component.SlidingTabLayout;
@@ -59,7 +56,7 @@ import org.worshipsongs.worship.R;
  * custom behaviour, such as closing when the user clicks anywhere outside the player
  * We manage to avoid rebuffering the video by setting some configchange flags on this activities declaration in the manifest.
  */
-public class CustomYoutubeBoxActivity extends AppCompatActivity implements YouTubePlayer.OnInitializedListener
+public class CustomYoutubeBoxActivity extends AbstractActivity implements YouTubePlayer.OnInitializedListener
 {
     //Keys
     public static final String KEY_VIDEO_ID = "KEY_VIDEO_ID";

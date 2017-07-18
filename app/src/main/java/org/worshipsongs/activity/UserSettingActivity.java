@@ -1,12 +1,9 @@
 package org.worshipsongs.activity;
 
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -19,7 +16,7 @@ import org.worshipsongs.worship.R;
  * @Author : Seenivasan
  * @Version : 1.0
  */
-public class UserSettingActivity extends AppCompatActivity
+public class UserSettingActivity extends AbstractActivity
 {
     private ActionBar actionBar;
     private PresentationScreenService presentationScreenService;

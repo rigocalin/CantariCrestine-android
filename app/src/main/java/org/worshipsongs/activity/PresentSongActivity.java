@@ -2,7 +2,6 @@ package org.worshipsongs.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,7 +21,7 @@ import org.worshipsongs.worship.R;
  * Version : 3.x
  */
 
-public class PresentSongActivity extends AppCompatActivity
+public class PresentSongActivity extends AbstractActivity
 {
     private SongDao songDao;
     private Song song;

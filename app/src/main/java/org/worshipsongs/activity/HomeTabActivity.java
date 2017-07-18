@@ -1,19 +1,17 @@
 package org.worshipsongs.activity;
 
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 
 import org.worshipsongs.component.HomeViewerPageAdapter;
 import org.worshipsongs.component.SlidingTabLayout;
-import org.worshipsongs.domain.Setting;
 import org.worshipsongs.worship.R;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class HomeTabActivity extends AppCompatActivity
+public class HomeTabActivity extends AbstractActivity
 {
     private List<String> titles;
     private ViewPager pager;

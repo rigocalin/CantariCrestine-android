@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 
+import com.appsee.Appsee;
+
 import org.worshipsongs.fragment.HomeTabFragment;
 import org.worshipsongs.service.PresentationScreenService;
 import org.worshipsongs.utils.CommonUtils;
@@ -29,6 +31,7 @@ public class NavigationDrawerActivity extends MaterialNavigationDrawer
     @Override
     public void init(Bundle bundle)
     {
+        Appsee.start("3b437ad98d184cfe82beb61a784c2b0c");
         presentationScreenService = new PresentationScreenService(this);
         this.addSubheader("");
         this.addSection(newSection(getString(R.string.home), R.drawable.ic_library_books_white, new HomeTabFragment()));

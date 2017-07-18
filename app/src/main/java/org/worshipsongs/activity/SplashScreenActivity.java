@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
@@ -27,7 +26,7 @@ import java.io.File;
  * @Author : Seenivasan
  * @Version : 1.0
  */
-public class SplashScreenActivity extends AppCompatActivity
+public class SplashScreenActivity extends AbstractActivity
 {
 
     private static final String LANGUAGE_CHOOSED_KEY = "languageChoosedKey";

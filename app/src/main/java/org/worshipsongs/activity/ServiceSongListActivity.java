@@ -9,7 +9,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -29,13 +28,12 @@ import org.worshipsongs.worship.R;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Author: Seenivasan, Madasamy
  * version 1.0.0
  */
-public class ServiceSongListActivity extends AppCompatActivity
+public class ServiceSongListActivity extends AbstractActivity
 {
     private ArrayAdapter<ServiceSong> adapter;
     private String serviceName;
