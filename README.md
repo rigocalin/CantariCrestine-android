@@ -13,9 +13,7 @@ This Android app brings you most of the Praise & Worship lyrics used by Tamil ch
 
 <p>
 Why develop another app when there are tons of similar apps?
-Worship Songs was developed as we couldn't find an app with latest Praise & Worship songs with both Tamil and Romanised text. 
-So, Worship Songs is the world's first mobile app that offers Romanised text for Tamil Christian lyrics. 
-Many Tamil congregations also sing English songs. Worship Songs provides many popular English songs as well so you need not look for another app. 
+
 And finally, the songs database evolves rapidly. New songs are added often, so you will never miss your favourite song. 
 Did we mention that Worship Songs is open source? Yes, you can be a part of this project. Isn't that great?
 </p>
@@ -23,13 +21,10 @@ Did we mention that Worship Songs is open source? Yes, you can be a part of this
 <h3>What are the features offered?</h3>
  <ul>
     <li>
-        A large collection of latest Tamil and English Praise & Worship song lyrics.
+        A large collection of Romanian Hymns and Worship song lyrics.
     </li>
     <li>
-        Romanised text for Tamil songs.
-    </li>
-    <li>
-        Ability to quickly search for a song by typing the first few characters in English. For example, typing "Aara" would help you locate the song "Aarathanai Naayagan Neerae" (ஆராதனை நாயகன் நீரே)<br>
+        Ability to quickly search for a song by typing the first few characters.<br>
     </li>
     <li>
         Songs grouped by Authors & Albums. 
@@ -47,7 +42,7 @@ Did we mention that Worship Songs is open source? Yes, you can be a part of this
         Music Key support for selected songs.
     </li>
     <li>
-        Increase/decrease the font size, distinguish Tamil text from Romanised by setting a different colour.
+        Increase/decrease the font size, option for setting a different colour.
     </li>
     <li>
         Keep the screen awake while viewing a song.
@@ -68,7 +63,7 @@ Did we mention that Worship Songs is open source? Yes, you can be a part of this
         Copy part of song
     </li>
     <li>
-        Professional design with no ads.
+        Best of all, no pesky ADS!
     </li>
  </ul>
 
@@ -78,7 +73,7 @@ FAQ
 
 <h4>Q. I couldn't find a song that I am looking for. What should I do?</h4>
 <p>
-Refine your search terms. For example, instead of "Arathanai", try searching for "Aarathanai". Worship Songs names the song titles that matches closely with their Tamil counterparts.
+Refine your search terms. Serch for the song title.
 </p>
 
 <h4>
@@ -113,15 +108,14 @@ If you find Worship Songs to be useful, please give it a good rating and share y
 Q. Is there a way I can use these songs in my Church?
 </h4>
 <p>
-Absolutely. In fact, the songs database that is shipped with this app is used by <a href="http://tmcsubangjaya.com"> Tamil Methodist Church Subang Jaya</a>. 
+Absolutely. In fact, the songs database that is shipped with this app is used by <a href="http://betania-tm.ro"> Bethany Baptist Church in Timisoara, Romania</a>. 
 If you want to do that in your Church, you would need to install a software named OpenLP and replace it's default songs database with the one that ships with this app.
 </p>
 
 <h3>Credits</h3>
 
 <ul>
- <li><a href="http://tmcsubangjaya.com"> Tamil Methodist Church Subang Jaya</a> -  For providing the initial database and actively using the current one.</li>
- <li>Muthu Vijayan - For designing the app icons.</li>
+ <li><a href="https://github.com/madasamys"> madasamys</a> -  For offering the sourcecode.</li>
 </ul>
 
 </body>
